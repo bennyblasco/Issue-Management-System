@@ -14,6 +14,7 @@ namespace IssueMS.Data
         {
         }
         public DbSet<Issue> Issue { get; set; }
+        public DbSet<Apps> Apps { get; set; }
         
     }
 }

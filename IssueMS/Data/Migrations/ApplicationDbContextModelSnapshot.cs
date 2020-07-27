@@ -16,6 +16,20 @@ namespace IssueMS.Data.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.4");
 
+            modelBuilder.Entity("IssueMS.Models.Apps", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AppId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Apps");
+                });
+
             modelBuilder.Entity("IssueMS.Models.Issue", b =>
                 {
                     b.Property<int>("Id")
